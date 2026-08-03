@@ -1,9 +1,8 @@
-# Phòng lab OpenStack All-in-One với Kolla Ansible
+# Lab OpenStack All-in-One với Kolla Ansible
 
 Đây là dự án phòng lab OpenStack cá nhân được triển khai bằng **Kolla Ansible** trên máy ảo Ubuntu Server chạy trong VirtualBox. Dự án mô phỏng đầy đủ vòng đời của một môi trường OpenStack, bao gồm triển khai hệ thống, cấu hình mạng, quản lý image, tạo máy ảo, kiểm tra tính bền vững của block storage, orchestration, quản lý danh tính và theo dõi tài nguyên.
 
-> Repository này được xây dựng cho mục đích học tập, assessment và thực hành troubleshooting. Đây không phải là kiến trúc sẵn sàng cho môi trường production.
-
+> Repository này được xây dựng cho mục đích học tập, assessment và thực hành troubleshooting. \
 ## Tổng quan dự án
 
 | Hạng mục | Giá trị |
