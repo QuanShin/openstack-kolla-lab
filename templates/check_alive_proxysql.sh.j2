@@ -1,0 +1,5 @@
+#!/bin/bash
+
+socat -T 2 /dev/null \
+  UNIX-CONNECT:/var/lib/kolla/proxysql/admin.sock \
+  >/dev/null 2>&1

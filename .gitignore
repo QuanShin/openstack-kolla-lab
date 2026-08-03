@@ -1,0 +1,30 @@
+# Secrets and credentials
+passwords.yml
+admin-openrc.sh
+*.pem
+*.key
+id_rsa
+id_ed25519
+openstack_lab
+
+# Logs and runtime data
+*.log
+logs/
+__pycache__/
+*.pyc
+
+# Virtual environments
+kolla-venv/
+.venv/
+venv/
+
+# Downloads and images
+*.qcow2
+*.img
+*.iso
+
+# Editor files
+*.swp
+*~
+.vscode/
+.idea/

@@ -1,0 +1,27 @@
+heat_template_version: 2021-04-16
+
+description: Heat test stack creating a network and subnet
+
+resources:
+  heat_test_network:
+    type: OS::Neutron::Net
+    properties:
+      name: heat-test-net
+
+  heat_test_subnet:
+    type: OS::Neutron::Subnet
+    properties:
+      name: heat-test-subnet
+      network: { get_resource: heat_test_network }
+      cidr: 10.20.30.0/24
+      gateway_ip: 10.20.30.1
+      enable_dhcp: true
+
+outputs:
+  network_id:
+    description: ID of the created network
+    value: { get_resource: heat_test_network }
+
+  subnet_id:
+    description: ID of the created subnet
+    value: { get_resource: heat_test_subnet }

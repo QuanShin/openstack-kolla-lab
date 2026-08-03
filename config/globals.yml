@@ -1,0 +1,22 @@
+---
+kolla_base_distro: "ubuntu"
+
+network_interface: "enp0s8"
+neutron_external_interface: "enp0s9"
+
+kolla_internal_vip_address: "192.168.56.20"
+
+enable_haproxy: "yes"
+enable_keepalived: "yes"
+
+enable_keystone: "yes"
+enable_glance: "yes"
+enable_nova: "yes"
+enable_placement: "yes"
+enable_neutron: "yes"
+enable_horizon: "yes"
+
+enable_cinder: "yes"
+enable_cinder_backend_lvm: "yes"
+
+nova_compute_virt_type: "qemu"
